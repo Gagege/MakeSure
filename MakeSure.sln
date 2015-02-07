@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MakeSure", "src\MakeSure\Ma
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MakeSure.Tests", "tests\MakeSure.Tests\MakeSure.Tests.fsproj", "{046886BB-84B0-410D-B863-C2453A5675FF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EC9F3E01-1893-4CF8-9FDA-B9C9B97A7175}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
