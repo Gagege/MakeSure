@@ -1,8 +1,16 @@
 ﻿namespace MakeSure
 
+open System
 open MakeSure.Utilities
+open Microsoft.FSharp.Linq.NullableOperators
 
 module Validation =
+
+    let hasValue input =
+        input <> ""
+
+    let beforeToday input =
+        input ?< DateTime.Now
     
     // run the validationFunction on the input
     // if valid, return Success with validated input
