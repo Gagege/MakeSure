@@ -2,7 +2,7 @@ language: csharp
 solution: MakeSure.sln
 install:
   - nuget restore MakeSure.sln
-  - nuget install xunit.runner.console -Version 2.0.0 -OutputDirectory testrunner
+  - nuget install xunit.runner.console -Version 1.9.2 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release MakeSure.sln
-  - mono ./testrunner/xunit.runner.console.2.0.0/tools/xunit.console.exe ./tests/MakeSure.Tests/bin/Release/MakeSure.Tests.dll
+  - mono ./testrunner/xunit.runner.console.1.9.2/tools/xunit.console.exe ./tests/MakeSure.Tests/bin/Release/MakeSure.Tests.dll
